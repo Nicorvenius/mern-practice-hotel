@@ -1,7 +1,7 @@
 {
-  "name": "marn_practik",
+  "name": "marn_term",
   "version": "1.0.0",
-  "description": "This is practic",
+  "description": "This project is a term paper.",
   "main": "app.js",
   "scripts": {
     "start": "cross-env NODE_ENV=pruduction node app.js",

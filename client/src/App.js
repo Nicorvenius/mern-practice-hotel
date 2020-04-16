@@ -41,7 +41,7 @@ export default class App extends Component{
     }
 
     render() {
-        const routes = useRoutes(!!this.state.token, {login: this.login, logout:this.logout, token: this.state.token});
+        const routes = useRoutes(!!this.state.token, {login: this.login, logout:this.logout, token: this.state.token, userId:this.state.userId});
         return (
             <Router>
                 { this.state.isAuthticated && <Navbar logout={this.logout}/>}

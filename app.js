@@ -8,6 +8,8 @@ app.use(express.json({extended: true}))
 
 app.use('/api/auth', require('./routes/auth.routes'))
 app.use('/api/rooms', require('./routes/hotelRooms.routes'))
+app.use('/api/posts', require('./routes/post.routes'))
+app.use('/api/category', require('./routes/category.routes'))
 
 if (process.env.NODE_ENV === 'production'){
     app.use('/', express.static(path.join(__dirname, 'client', 'build')))

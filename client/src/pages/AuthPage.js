@@ -53,7 +53,7 @@ export default class AuthPage extends Component {
                 <div className="col s6 offset-s3">
                     <div className="card blue darken-1">
                         <div className="card-content white-text">
-                            <span className="card-title">Бронирование номеров</span>
+                            <span className="card-title">Big Content</span>
                             <div>
                                 <div className="input-field">
                                     <input placeholder="Введите email" id="email" type="text" name="email" className="yellow-input" onChange={this.changeHandler}/>

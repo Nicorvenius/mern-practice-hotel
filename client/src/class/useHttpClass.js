@@ -1,4 +1,3 @@
-import React from 'react'
 
 export default class useHttp{
 
@@ -12,14 +11,17 @@ export default class useHttp{
             }
 
             const response = await fetch(url, {method, body, headers})
+
             const data = await response.json()
 
             if (!response.ok) {
+                // console.log(data)
+                // response.reject(data)
                 throw new Error(data.message || 'Что-то пошло не так')
             }
             return data
-        } catch (e) {
-            throw e;
+        } catch (err) {
+            throw err;
         }
     }
 }

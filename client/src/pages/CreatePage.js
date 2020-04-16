@@ -6,7 +6,6 @@ export default class CreatePage extends Component{
     constructor() {
         super();
         this.httpRequest = new useHttp();
-        this.id = 10
         this.data = {};
     }
 
